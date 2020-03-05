@@ -1,0 +1,29 @@
+float circulo;
+
+  void setup(){
+    size(400,400);
+    background(000000);
+  }
+  
+  void draw(){
+    
+    if (mousePressed) {
+      circulo = random(0,6);
+      println(circulo);
+    }
+    else if (circulo<=1) {
+      fill(#00FFFD);
+      rect(0,0,400,400);
+      fill(#98FF00);
+      ellipseMode(CENTER);
+      ellipse(200,200,100,100);
+      
+    } else if (circulo<=2) {
+      fill(#FFBC00);
+      rect(0,0,400,400);
+      fill(#75FF48);
+      ellipseMode(CENTER);
+      ellipse(100,100,100,100);
+      
+      
+    }
